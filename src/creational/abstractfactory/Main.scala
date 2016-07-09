@@ -1,0 +1,23 @@
+package creational.abstractfactory
+
+import creational.abstractfactory.interfaces.{Button, WidgetFactory, Window}
+import creational.abstractfactory.metalimpl.MetalFactory
+import creational.abstractfactory.simpleimpl.SimpleFactory
+
+object Main {
+
+  def createGUI(factory: WidgetFactory) = {
+    def fire(window: Window, button: Button) = {
+      window.open()
+      button.click()
+      window.close()
+    }
+
+    fire(factory.createWindow(), factory.createButton())
+  }
+
+  def main(args: Array[String]): Unit = {
+    createGUI(SimpleFactory.getInstance())
+    createGUI(MetalFactory.getInstance())
+  }
+}
