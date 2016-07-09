@@ -2,7 +2,7 @@ package creational.abstractfactory.simpleimpl;
 
 import creational.abstractfactory.interfaces.Window;
 
-public class SimpleWindow implements Window {
+class SimpleWindow implements Window {
     @Override
     public void open() {
         System.out.println("SimpleWindow.open");

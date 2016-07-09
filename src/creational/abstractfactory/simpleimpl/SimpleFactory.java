@@ -1,6 +1,7 @@
 package creational.abstractfactory.simpleimpl;
 
 import creational.abstractfactory.interfaces.Button;
+import creational.abstractfactory.interfaces.TextField;
 import creational.abstractfactory.interfaces.WidgetFactory;
 import creational.abstractfactory.interfaces.Window;
 
@@ -23,5 +24,10 @@ public class SimpleFactory implements WidgetFactory {
     @Override
     public Button createButton() {
         return new SimpleButton();
+    }
+
+    @Override
+    public TextField createTextField() {
+        return new SimpleTextField();
     }
 }

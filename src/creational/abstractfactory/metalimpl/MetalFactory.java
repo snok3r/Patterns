@@ -1,6 +1,7 @@
 package creational.abstractfactory.metalimpl;
 
 import creational.abstractfactory.interfaces.Button;
+import creational.abstractfactory.interfaces.TextField;
 import creational.abstractfactory.interfaces.WidgetFactory;
 import creational.abstractfactory.interfaces.Window;
 
@@ -23,5 +24,10 @@ public class MetalFactory implements WidgetFactory {
     @Override
     public Button createButton() {
         return new MetalButton();
+    }
+
+    @Override
+    public TextField createTextField() {
+        return new MetalTextField();
     }
 }

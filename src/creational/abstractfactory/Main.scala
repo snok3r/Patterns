@@ -14,6 +14,8 @@ object Main {
     }
 
     fire(factory.createWindow(), factory.createButton())
+
+    println(factory.createTextField().getText)
   }
 
   def main(args: Array[String]): Unit = {
