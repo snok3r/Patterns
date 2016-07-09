@@ -19,7 +19,7 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-    createGUI(SimpleFactory.getInstance())
-    createGUI(MetalFactory.getInstance())
+    createGUI(SimpleFactory)
+    createGUI(MetalFactory)
   }
 }
