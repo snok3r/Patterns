@@ -1,6 +1,8 @@
 package creational.builder;
 
-/* Director*/
+import creational.builder.builders.CarBuilder;
+
+/* Director */
 public class AutoDealer {
 
     public void carWithoutRoof(CarBuilder builder) {
