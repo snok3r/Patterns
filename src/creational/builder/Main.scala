@@ -2,16 +2,18 @@ package creational.builder
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val director = new Director
-    val bmwBuilder = new BMWBuilder
+    val autoDealer = new AutoDealer
 
+    val bmwBuilder = new BMWBuilder
     println("Roofless car:")
-    director.carWithoutRoof(bmwBuilder)
-    bmwBuilder.getBMWCar()
+    autoDealer.carWithoutRoof(bmwBuilder)
+    autoDealer.getCar(bmwBuilder);
+    //bmwBuilder.getCar()
 
     val scodaBuilder = new ScodaBuilder
     println("\nCar with roof:")
-    director.carWithRoof(scodaBuilder)
-    scodaBuilder.getScodaCar()
+    autoDealer.carWithRoof(scodaBuilder)
+    autoDealer.getCar(scodaBuilder);
+    //scodaBuilder.getCar()
   }
 }

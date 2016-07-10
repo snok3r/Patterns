@@ -19,4 +19,8 @@ public class CarBuilder {
     public void buildRoof() {
         System.out.println("CarBuilder.buildRoof");
     }
+
+    public void getCar() {
+        System.out.println("CarBuilder.getCar");
+    }
 }

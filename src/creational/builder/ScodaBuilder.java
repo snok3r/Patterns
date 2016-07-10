@@ -11,7 +11,8 @@ public class ScodaBuilder extends CarBuilder {
         System.out.println("ScodaBuilder.buildTransmission");
     }
 
-    public void getScodaCar() {
-        System.out.println("ScodaBuilder.getScodaCar");
+    @Override
+    public void getCar() {
+        System.out.println("ScodaBuilder.getCar");
     }
 }

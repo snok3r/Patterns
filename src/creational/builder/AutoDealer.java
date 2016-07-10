@@ -1,6 +1,7 @@
 package creational.builder;
 
-public class Director {
+/* Director*/
+public class AutoDealer {
 
     public void carWithoutRoof(CarBuilder builder) {
         builder.buildEngine();
@@ -12,5 +13,9 @@ public class Director {
         carWithoutRoof(builder);
 
         builder.buildRoof();
+    }
+
+    public void getCar(CarBuilder builder) {
+        builder.getCar();
     }
 }

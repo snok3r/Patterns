@@ -21,7 +21,8 @@ public class BMWBuilder extends CarBuilder {
         System.out.println("BMWBuilder.buildRoof");
     }
 
-    public void getBMWCar() {
-        System.out.println("BMWBuilder.getBMWCar");
+    @Override
+    public void getCar() {
+        System.out.println("BMWBuilder.getCar");
     }
 }
