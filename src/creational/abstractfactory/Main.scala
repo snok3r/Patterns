@@ -7,6 +7,7 @@ import creational.abstractfactory.simpleimpl.SimpleFactory
 object Main {
 
   def createGUI(factory: WidgetFactory) = {
+
     def fire(window: Window, button: Button, textField: TextField) = {
       window.open()
       button.click()
