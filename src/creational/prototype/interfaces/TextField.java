@@ -1,6 +1,6 @@
 package creational.prototype.interfaces;
 
-public interface TextField {
+public interface TextField extends Widget {
 
     String getText();
 

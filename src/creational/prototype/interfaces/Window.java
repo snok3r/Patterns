@@ -1,6 +1,6 @@
 package creational.prototype.interfaces;
 
-public interface Window {
+public interface Window extends Widget {
     void open();
 
     void close();

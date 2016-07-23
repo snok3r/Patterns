@@ -1,34 +1,20 @@
 package creational.prototype;
 
-import creational.prototype.interfaces.Button;
-import creational.prototype.interfaces.TextField;
-import creational.prototype.interfaces.WidgetFactory;
-import creational.prototype.interfaces.Window;
+import creational.prototype.interfaces.Widget;
 
-public class WidgetPrototypeFactory implements WidgetFactory {
+public class WidgetPrototypeFactory {
 
-    private Window prototypeWindow;
-    private Button prototypeButton;
-    private TextField prototypeTextField;
+    private Widget prototypeWidget;
 
-    public WidgetPrototypeFactory(Window pWindow, Button pButton, TextField pTextField) {
-        prototypeWindow = pWindow;
-        prototypeButton = pButton;
-        prototypeTextField = pTextField;
+    public WidgetPrototypeFactory() {
     }
 
-    @Override
-    public Window createWindow() {
-        return prototypeWindow._clone();
+    public WidgetPrototypeFactory setPrototypeWidget(Widget w) {
+        prototypeWidget = w;
+        return this;
     }
 
-    @Override
-    public Button createButton() {
-        return prototypeButton._clone();
-    }
-
-    @Override
-    public TextField createTextField() {
-        return prototypeTextField._clone();
+    public Widget create() {
+        return prototypeWidget._clone();
     }
 }
