@@ -2,13 +2,13 @@ package structural.adapter;
 
 public interface Shape {
 
-    int getLowerLeftX();
-
-    int getLowerLeftY();
-
     int getUpperRightX();
 
     int getUpperRightY();
+
+    void setUpperRightX(int x);
+
+    void setUpperRightY(int y);
 
     void draw();
 
