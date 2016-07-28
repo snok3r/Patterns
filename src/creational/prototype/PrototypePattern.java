@@ -4,7 +4,7 @@ import creational.prototype.interfaces.Button;
 import creational.prototype.interfaces.Window;
 import creational.prototype.simpleimpl.SimpleFactory;
 
-public class Main {
+public class PrototypePattern {
 
     public static void main(String[] args) {
         WidgetPrototypeFactory prototypeFactory = new WidgetPrototypeFactory();

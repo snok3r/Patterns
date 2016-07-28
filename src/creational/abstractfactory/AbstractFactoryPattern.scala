@@ -4,7 +4,7 @@ import creational.abstractfactory.interfaces.{Button, TextField, WidgetFactory, 
 import creational.abstractfactory.metalimpl.MetalFactory
 import creational.abstractfactory.simpleimpl.SimpleFactory
 
-object Main {
+object AbstractFactoryPattern {
 
   def createGUI(factory: WidgetFactory) = {
 

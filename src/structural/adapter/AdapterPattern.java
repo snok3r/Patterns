@@ -3,7 +3,7 @@ package structural.adapter;
 /**
  * Client
  */
-public class Main {
+public class AdapterPattern {
 
     public static void main(String[] args) {
 

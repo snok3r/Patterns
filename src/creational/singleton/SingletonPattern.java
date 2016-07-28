@@ -1,6 +1,6 @@
 package creational.singleton;
 
-public class Main {
+public class SingletonPattern {
 
     public static void main(String[] args) {
         SingletonEnum singletonEnum = SingletonEnum.instance;

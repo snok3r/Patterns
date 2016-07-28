@@ -2,7 +2,7 @@ package creational.factorymethod
 
 import creational.factorymethod.creators.{BurgerCreator, PizzaCreator, ProductCreator}
 
-object Main {
+object FactoryMethodPattern {
   def main(args: Array[String]): Unit = {
 
     def createProduct(productCreator: ProductCreator) = productCreator.createProduct()

@@ -2,7 +2,7 @@ package creational.builder
 
 import creational.builder.builders.{BMWBuilder, ScodaBuilder}
 
-object Main {
+object BuilderPattern {
 
   def main(args: Array[String]): Unit = {
     val autoDealer = new AutoDealer
