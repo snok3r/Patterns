@@ -1,6 +1,7 @@
 package creational.abstractfactory.metalimpl
 
-import creational.abstractfactory.interfaces.{Button, TextField, WidgetFactory, Window}
+import creational.abstractfactory.interfaces.{Button, TextField, Window}
+import creational.abstractfactory.interfaces.WidgetFactory
 
 object MetalFactory extends WidgetFactory {
   println("MetalFactory instantiated")

@@ -1,4 +1,4 @@
-package creational.builder;
+package creational.builder.builders;
 
 public class CarBuilder {
     protected CarBuilder() {
