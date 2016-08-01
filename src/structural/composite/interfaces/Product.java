@@ -8,9 +8,9 @@ import java.util.Iterator;
  */
 public abstract class Product {
 
-    private final String name;
-    private final int kcal;
-    private final int weight;
+    protected final String name;
+    protected final int kcal;
+    protected final int weight;
 
     protected Product(String name, int kcal, int weight) {
         this.name = name;

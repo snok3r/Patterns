@@ -43,7 +43,7 @@ public class Pizza extends Product {
         return total(
                 ingredients.parallelStream(),
                 Product::getKcal
-        );
+        ) + kcal;
     }
 
     @Override
@@ -51,7 +51,7 @@ public class Pizza extends Product {
         return total(
                 ingredients.parallelStream(),
                 Product::getWeight
-        );
+        ) + weight;
     }
 
     private int total(Stream<Product> stream, ToIntFunction<? super Product> mapper) {

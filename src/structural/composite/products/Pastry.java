@@ -43,7 +43,7 @@ public class Pastry extends Product {
         return total(
                 ingredients.parallelStream(),
                 Product::getKcal
-        ) + super.getKcal();
+        ) + kcal;
     }
 
     @Override
@@ -51,7 +51,7 @@ public class Pastry extends Product {
         return total(
                 ingredients.parallelStream(),
                 Product::getWeight
-        ) + super.getWeight();
+        ) + weight;
     }
 
     private int total(Stream<Product> stream, ToIntFunction<? super Product> mapper) {
